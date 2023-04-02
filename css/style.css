@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../assets/fonts/Poppins-Black.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../assets/fonts/Poppins-SemiBold.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../assets/fonts/Poppins-Regular.woff2");
+  font-weight: 500;
+}
+
+/* обнуляющие стили */
+.main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+.main p {
+  font-family: Poppins-Black;
+}
+body {
+  margin: 0 auto;
+  font-family: Poppins-Black, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* конец */
+
+:root {
+  --Title: rgba(31, 39, 68, 1);
+  --p: #73788c;
+  --active-text: #69b99d;
+}
+
+/* hero section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-left: 124px;
+  padding-right: 124px;
+  background-color: #f5f5f5;
+}
+.header__logo-conatiner a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.header__logo-conatiner p {
+  color: #4ba586;
+}
+.header__container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.header__navigation-container {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+}
+
+.header__navigation-container li {
+  color: #8e8e8e;
+  font-weight: 500;
+}
+.hedaer__button-container {
+  display: flex;
+  gap: 8px;
+}
+.header__button {
+  padding: 16px 48px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.header__left-button {
+  color: #69b99d;
+}
+.header__right-button {
+  background-color: #69b99d;
+  color: white;
+}
+.hero__second-section__container {
+  padding-left: 124px;
+  position: relative;
+}
+.hero__second-section {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding-top: 65px;
+}
+
+.hero__second-section__button {
+  padding: 12px 24px;
+  color: var(--active-text);
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.hero__second-section__h1 {
+  font-weight: 400;
+  font-size: 64px;
+  margin-bottom: 24px;
+  color: var(--Title);
+}
+.hero__second-section__p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--p);
+}
+.house-img {
+  margin-top: -65px;
+}
+
+.hero__second-section__absolute-container {
+  width: 751px;
+  position: absolute;
+  margin-top: 64px;
+}
+
+.hero__second-section__absolute-container__bottom-section {
+  background-color: white;
+  padding: 32px;
+  display: flex;
+  gap: 45px;
+  -webkit-box-shadow: -45px 31px 95px 10px rgba(34, 60, 80, 0.18);
+  -moz-box-shadow: -45px 31px 95px 10px rgba(34, 60, 80, 0.18);
+  box-shadow: -45px 31px 95px 10px rgba(34, 60, 80, 0.18);
+}
+.hero__second-section__absolute-container__bottom-section h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.absolute-container__description {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.absolute-container__description p {
+  color: #a6a6a6;
+  font-weight: 500;
+}
+
+.absolute-container__buttons {
+  display: flex;
+}
+.absolute-container__buttons__first-button-style button {
+  padding: 12px 32px;
+  background-color: white;
+  color: var(--active-text);
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.absolute-container__buttons__second-button-style button {
+  padding: 12px 32px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--p);
+}
+
+.discover {
+  padding: 120px 122px;
+  background-color: white;
+}
+
+.discover__firts-button {
+  padding: 12px 24px;
+  background-color: #f8f9fe;
+  color: var(--active-text);
+  font-weight: 500;
+  margin-bottom: 16px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.discover__second-part {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 1192px;
+  margin: 0 auto;
+  gap: 524px;
+  margin-bottom: 48px;
+}
+.discover__h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #054457;
+  margin-bottom: 16px;
+}
+
+.discover__p {
+  color: var(--p);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.discover__second-button {
+  border: none;
+  outline: none;
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--active-text);
+  align-items: center;
+  padding: 12px 24px;
+}
+.discover__second-button img {
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(105, 185, 157, 0.37);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(105, 185, 157, 0.37);
+  box-shadow: 0px 3px 20px 0px rgba(105, 185, 157, 0.37);
+}
+
+.discover__third-part {
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+}
+
+.discover__card {
+  width: 376px;
+  height: 472px;
+  border: 1px solid #dedcda;
+  padding: 16px;
+}
+
+.discover__card img {
+  margin-bottom: 16px;
+}
+
+.discover__card h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--Title);
+  margin-bottom: 8;
+}
+
+.discover__third-part__first-p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--p);
+  margin-bottom: 16px;
+}
+
+.discover__third-part__second-p {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--active-text);
+}
+
+.discover__third-part__cost-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.discover__third-part__cost-container p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--p);
+}
+.discover__third-part__cost-container span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Title);
+}
+
+.discover__third-part button {
+  padding: 12px 12px;
+  width: 100%;
+  border: 1px solid var(--active-text);
+  color: var(--active-text);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  background-color: transparent;
+}
+.discover__third-part button:active {
+  background-color: var(--active-text);
+  color: white;
+}
