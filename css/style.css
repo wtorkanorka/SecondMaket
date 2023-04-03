@@ -70,6 +70,27 @@ body {
 .header__navigation-container li {
   color: #8e8e8e;
   font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+.header__navigation-container li:active {
+  transform: translateY(-8px);
+  color: var(--active-text);
+}
+/* сделай точку по центру слова под словом, при нажатии */
+.header__navigation-container li::after {
+  content: "•";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translateY(8px);
+  opacity: 0;
+  pointer-events: none;
+  color: var(--active-text);
+}
+.header__navigation-container li:active::after {
+  opacity: 1;
 }
 .hedaer__button-container {
   display: flex;
